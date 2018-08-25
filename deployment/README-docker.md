@@ -26,7 +26,7 @@ cp btsync-media.env.EXAMPLE btsync-media.env
 # edit .env files if you want to synchronize medias
 make web
 make migrate
-make collect static
+make collectstatic
 ```
 
 Now point your browser at the ip of the web container on port 80 or to the
