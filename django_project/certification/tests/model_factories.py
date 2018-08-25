@@ -24,6 +24,8 @@ class CertifyingOrganisationF(factory.django.DjangoModelFactory):
 
     name = factory.sequence(
         lambda n: u'Test certifying organisation name %s' % n)
+    organisation_description = factory.sequence(
+        lambda n: u'Test description %s' % n)
     organisation_email = factory.sequence(lambda n: u'Test email %s' % n)
     organisation_phone = factory.sequence(lambda n: u'Test phone %s' % n)
     address = factory.sequence(lambda n: u'Test address %s' % n)

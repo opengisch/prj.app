@@ -31,6 +31,7 @@ class TestCertifyingOrganisation(TestCase):
 
         # check if model attributes exists.
         self.assertTrue(model.name is not None)
+        self.assertTrue(model.description is not None)
         self.assertTrue(model.organisation_email is not None)
         self.assertTrue(model.address is not None)
         self.assertTrue(model.organisation_phone is not None)
