@@ -101,7 +101,6 @@ class CertifyingOrganisation(models.Model):
 
     address = models.TextField(
         help_text=_('Address of Organisation or Institution.'),
-        max_length=1000,
         null=False,
         blank=False
     )
@@ -129,6 +128,14 @@ class CertifyingOrganisation(models.Model):
     organisation_credits = models.IntegerField(
         help_text=_('Credits available'),
         default=0,
+        null=True,
+        blank=True
+    )
+
+    description = models.TextField(
+        help_text=_('Description of Organisation or Institution and '
+                    'it contributes to the project.'),
+        max_length=3000,
         null=True,
         blank=True
     )

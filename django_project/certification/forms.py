@@ -45,6 +45,7 @@ class CertifyingOrganisationForm(forms.ModelForm):
         model = CertifyingOrganisation
         fields = (
             'name',
+            'description',
             'organisation_email',
             'url',
             'address',
@@ -64,6 +65,7 @@ class CertifyingOrganisationForm(forms.ModelForm):
             Fieldset(
                 form_title,
                 Field('name', css_class='form-control'),
+                Field('description', css_class='form-control'),
                 Field('organisation_email', css_class='form-control'),
                 Field('url', css_class='form-control'),
                 Field('address', css_class='form-control'),
