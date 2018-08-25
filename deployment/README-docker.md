@@ -21,6 +21,9 @@ images for you in **production mode**.
 
 ```
 cd deployment
+cp btsync-db.env.EXAMPLE btsync-db.env
+cp btsync-media.env.EXAMPLE btsync-media.env
+# edit .env files if you want to synchronize medias
 make web
 make migrate
 make collect static
